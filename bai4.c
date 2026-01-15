@@ -1,7 +1,7 @@
 /******************************************************************************
- * Họ và tên: [ĐIỀN TÊN TẠI ĐÂY]
- * MSSV:      [ĐIỀN MSSV TẠI ĐÂY]
- * Lớp:       [ĐIỀN LỚP TẠI ĐÂY]
+ * Họ và tên: nguyenquochiep
+ * MSSV:      PS48461
+ * Lớp:       CS21301
  *****************************************************************************/
 
 // BÀI 4: XÂY DỰNG CHƯƠNG TRÌNH TÍNH ĐIỂM TRUNG BÌNH 
@@ -11,16 +11,22 @@
 // Điểm Toán có hệ số 3, điểm Lý có hệ số 2, điểm Hóa có hệ số 1
 
 #include <stdio.h>
+int main() {
+    float diemToan, diemLy, diemHoa;
+    float diemTrungBinh;
 
-int main(){
-    // Khai báo biến
+    printf("Nhap diem mon Toan: ");
+    scanf("%f", &diemToan);
 
-    // Nhập dữ liệu
+    printf("Nhap diem mon Ly: ");
+    scanf("%f", &diemLy);
 
+    printf("Nhap diem mon Hoa: ");
+    scanf("%f", &diemHoa);
 
-    // Xử lý, tính toán
+    diemTrungBinh = (diemToan * 3 + diemLy * 2 + diemHoa * 1) / (3 + 2 + 1);
 
-    // Hiển thị kết quả
+    printf("\nDiem trung binh cua ban la: %.2f\n", diemTrungBinh);
 
-
+    return 0;
 }

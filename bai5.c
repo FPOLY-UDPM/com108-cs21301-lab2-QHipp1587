@@ -1,7 +1,7 @@
 /******************************************************************************
- * Họ và tên: [ĐIỀN TÊN TẠI ĐÂY]
- * MSSV:      [ĐIỀN MSSV TẠI ĐÂY]
- * Lớp:       [ĐIỀN LỚP TẠI ĐÂY]
+ * Họ và tên: nguyenquochiep
+ * MSSV:      PS48461
+ * Lớp:       CS21301
  *****************************************************************************/
 
 // BÀI LÀM THÊM
@@ -9,11 +9,29 @@
 
 #include <stdio.h>
 
-int main(){
-    int so1, so2;
+#include <stdio.h>
 
-    printf("Chương trình tính tích và thương của 2 số\n");
+int main() {
+    float so1, so2;
+    float tich, thuong;
 
+    printf("Nhap vao so thu nhat: ");
+    scanf("%f", &so1);
+
+    printf("Nhap vao so thu hai: ");
+    scanf("%f", &so2);
+
+    tich = so1 * so2;
+    thuong = so1 / so2;
+
+    printf("\nTich cua hai so la: %.2f\n", tich);
+    
+    // Kiem tra neu so thu hai khac 0 thi moi in thuong
+    if (so2 != 0) {
+        printf("Thuong cua hai so la: %.2f\n", thuong);
+    } else {
+        printf("Khong the chia cho 0!\n");
+    }
 
     return 0;
-} 
+}
