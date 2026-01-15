@@ -9,24 +9,29 @@
 
 #include <stdio.h>
 
-int main(){
- // Khai báo biến
-    int so1 = 0, so2 = 0;
-    // Nhập dữ liệu
-    printf("Hay nhap gia tri cho x : ");
-    scanf("%d", &so1);
-    
-    printf("Hay nhap gia tri cho y : ");
-    scanf("%d", &so2);
-    // Xử lý, tính toán
-    //tinh tich
-    int tich = 0;
-    tich = so1 * so2;
-    printf("Vay gia tri tich cua X va Y la : %d\n", tich);
+#include <stdio.h>
 
-    // tinh thuong
-    int hieu = 0;
-    hieu = so1 / so2;
-    printf("Vay gia tri thuong cua X va Y la : %d\n", thuong);
+int main() {
+    float so1, so2;
+    float tich, thuong;
+
+    printf("Nhap vao so thu nhat: ");
+    scanf("%f", &so1);
+
+    printf("Nhap vao so thu hai: ");
+    scanf("%f", &so2);
+
+    tich = so1 * so2;
+    thuong = so1 / so2;
+
+    printf("\nTich cua hai so la: %.2f\n", tich);
+    
+    // Kiem tra neu so thu hai khac 0 thi moi in thuong
+    if (so2 != 0) {
+        printf("Thuong cua hai so la: %.2f\n", thuong);
+    } else {
+        printf("Khong the chia cho 0!\n");
+    }
+
     return 0;
-} 
+}
